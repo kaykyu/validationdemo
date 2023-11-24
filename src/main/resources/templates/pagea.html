@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PAGE A</h1>
+    <form method="POST" th:action="@{/home/pagea}">
+        <input type="text" placeholder="enter your name..." name="fullname" />
+        <button type="submit">Submit</button>
+    </form>
+    <p data-th-text="${sessionData}"></p>
+</body>
+</html>
